@@ -50,6 +50,7 @@ form {
   border: 1px solid #D5D4D8;
   height: 35px;
   font-family: 'Karla', sans-serif;
+  text-indent: 5px;
 }
 
 .form--button {
