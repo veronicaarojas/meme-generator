@@ -39,7 +39,7 @@ main {
   padding-top: 130px;
 }
 
-form {
+.form {
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
@@ -65,4 +65,8 @@ form {
   font-weight: 700;
   text-align: center;
   letter-spacing: -0.7px;
+}
+
+.meme--image {
+  max-width: 100%;
 }
