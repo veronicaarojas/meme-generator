@@ -2,17 +2,28 @@ import React from 'react'
 
 function Form() {
   return (
-   <form>
-    <input />
-    <input />
+    <main>
+  <form className='form'>
+    
+    <input 
+    placeholder='Top Text'
+    type="text" className='form--input'/>
+    <input 
+    type="text" 
+    className='form--input'
+    placeholder='Bottom Text'/>
+    
+    
 
-    <div>
-      <button>
+    
+      <button className='form--button'>
         Get a new meme image
       </button>
-    </div>
+   
 
    </form>
+    </main>
+   
   )
 }
 
