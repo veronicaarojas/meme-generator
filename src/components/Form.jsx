@@ -3,7 +3,6 @@ import memesData from '../memesData';
 import { useState } from 'react';
 
 function Form() {
-  // const [ memeImage, setMemeImage ] = useState("");
   const [ meme, setMeme ] = useState({
     topText: "",
     bottomText: "",
