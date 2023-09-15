@@ -19,6 +19,17 @@ function randomMeme() {
   }))
 }
 
+function handleChange(event) {
+  const {name, value} = event.target;
+
+  setMeme(prevMeme => {
+    return {
+      ...prevMeme, 
+      [name]: value
+    }
+  })
+}
+
 
 
   return (
@@ -27,11 +38,18 @@ function randomMeme() {
     
     <input 
     placeholder='Top Text'
-    type="text" className='form--input'/>
+    type="text" className='form--input'
+    name="topText"
+    value={meme.topText}
+    onChange={handleChange}
+    />
     <input 
     type="text" 
     className='form--input'
-    placeholder='Bottom Text'/>
+    placeholder='Bottom Text'
+    onChange={handleChange}
+    name="bottomText"
+    value={meme.bottomText}/>
     
     
 
@@ -52,8 +70,8 @@ function randomMeme() {
       alt='meme image'
       className='meme--image'
       />
-    <h2 className="meme--text top">One does not simply</h2>
-    <h2 className="meme--text bottom">Walk into Mordor</h2>
+    <h2 className="meme--text top">{meme.topText}</h2>
+    <h2 className="meme--text bottom">{meme.bottomText}</h2>
    </div>
 
     
