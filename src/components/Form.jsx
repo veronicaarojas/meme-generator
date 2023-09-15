@@ -41,14 +41,22 @@ function randomMeme() {
         Get a new meme image
       </button>
 
-      <img 
+      
+   
+
+   </div>
+
+   <div className='meme'>
+   <img 
       src={meme.randomImage}
       alt='meme image'
       className='meme--image'
       />
-   
-
+    <h2 className="meme--text top">One does not simply</h2>
+    <h2 className="meme--text bottom">Walk into Mordor</h2>
    </div>
+
+    
     </main>
    
   )
