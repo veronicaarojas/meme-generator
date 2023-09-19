@@ -1,5 +1,4 @@
 import React from 'react'
-import memesData from '../memesData';
 import { useState, useEffect } from 'react';
 
 function Form() {
