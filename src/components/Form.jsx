@@ -10,9 +10,18 @@ function Form() {
   const [allMemes, setAllMemes] = useState([]);
 
 useEffect(() => {
-fetch("https://api.imgflip.com/get_memes")
-  .then(res => res.json())
-  .then(data => setAllMemes(data.data.memes))
+
+  async function getMemes() {
+    const response = await fetch("https://api.imgflip.com/get_memes");
+    const data = await response.json()
+    setAllMemes(data.data.memes);
+  }
+
+  getMemes();
+
+// fetch("https://api.imgflip.com/get_memes")
+//   .then(res => res.json())
+//   .then(data => setAllMemes(data.data.memes))
 }, []);
 
 function randomMeme() {
