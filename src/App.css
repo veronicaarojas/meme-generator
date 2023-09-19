@@ -67,13 +67,10 @@ main {
   letter-spacing: -0.7px;
 }
 
-.meme--image {
-  max-width: 100%;
-}
 
 .meme {
   position: relative;
-}
+} 
 
 .meme--image {
   max-width: 100%;
